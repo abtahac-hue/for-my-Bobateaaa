@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Bobateaaa ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="hearts"></div>
+
+<main class="container">
+
+    <!-- WELCOME -->
+    <section id="welcome" class="page active">
+        <div class="emoji">🧋❤️</div>
+        <h1>Heyyy, my Bobateaaa...</h1>
+
+        <p>
+            I made you a tiny little something because apparently
+            loving you normally is never Abtaha enough heheee
+        </p>
+
+        <p class="small-text">
+            There are a few questions first though 👀
+        </p>
+
+        <button onclick="nextPage('q1')">Start ❤️</button>
+    </section>
+
+
+    <!-- QUESTION 1 -->
+    <section id="q1" class="page">
+        <p class="question-number">Question 1</p>
+        <h2>Do you know how much I love you?</h2>
+
+        <button onclick="nextPage('q2')">A LOT ❤️</button>
+        <button onclick="nextPage('q2')">Way too much 😭</button>
+        <button onclick="nextPage('q2')">An unhealthy amount probably 💀</button>
+    </section>
+
+
+    <!-- QUESTION 2 -->
+    <section id="q2" class="page">
+        <p class="question-number">Question 2</p>
+        <h2>What's one moment with me you'd relive forever?</h2>
+
+        <textarea id="memory" placeholder="Type your answer here..."></textarea>
+
+        <button onclick="nextPage('q3')">Next →</button>
+    </section>
+
+
+    <!-- QUESTION 3 -->
+    <section id="q3" class="page">
+        <p class="question-number">Question 3</p>
+        <h2>What do you miss the most about us when we're apart?</h2>
+
+        <textarea id="miss" placeholder="Tell meee 🥺"></textarea>
+
+        <button onclick="nextPage('q4')">Next →</button>
+    </section>
+
+
+    <!-- QUESTION 4 -->
+    <section id="q4" class="page">
+        <p class="question-number">Very important question.</p>
+
+        <h2>Would you still love me if I was a worm?</h2>
+
+        <div class="worm">🪱</div>
+
+        <div class="button-area">
+            <button onclick="wormYes()">YES ❤️</button>
+            <button id="noButton">No 💔</button>
+        </div>
+
+        <p id="wormMessage"></p>
+    </section>
+
+
+    <!-- QUESTION 5 -->
+    <section id="q5" class="page">
+        <p class="question-number">Okay fine. Next question 😌</p>
+
+        <h2>Where should we disappear together for a week?</h2>
+
+        <input id="place" type="text" placeholder="Anywhere in the world...">
+
+        <button onclick="nextPage('q6')">Next →</button>
+    </section>
+
+
+    <!-- QUESTION 6 -->
+    <section id="q6" class="page">
+        <p class="question-number">Question 6</p>
+
+        <h2>What's something I do that secretly makes you smile?</h2>
+
+        <textarea id="smile" placeholder="I wanna know 👀"></textarea>
+
+        <button onclick="nextPage('q7')">Next →</button>
+    </section>
+
+
+    <!-- QUESTION 7 -->
+    <section id="q7" class="page">
+        <p class="question-number">Question 7</p>
+
+        <h2>How many kisses do I owe you right now?</h2>
+
+        <button onclick="kissAnswer('10')">10 💋</button>
+        <button onclick="kissAnswer('100')">100 💋</button>
+        <button onclick="kissAnswer('infinite')">∞ Obviously</button>
+
+        <p id="kissMessage"></p>
+    </section>
+
+
+    <!-- QUESTION 8 -->
+    <section id="q8" class="page">
+        <p class="question-number">Last real question...</p>
+
+        <h2>What are you most excited about for our future?</h2>
+
+        <textarea id="future" placeholder="Tell me everything ❤️"></textarea>
+
+        <button onclick="showFinalIntro()">I'm done ❤️</button>
+    </section>
+
+
+    <!-- FINAL INTRO -->
+    <section id="finalIntro" class="page">
+        <h2>Okay...</h2>
+
+        <p>You passed my extremely scientific relationship examination.</p>
+
+        <p>But I actually made this for another reason.</p>
+
+        <button onclick="nextPage('letter')">One last thing... ❤️</button>
+    </section>
+
+
+    <!-- LOVE LETTER -->
+    <section id="letter" class="page letter-page">
+
+        <p class="tiny-heart">❤️</p>
+
+        <h1>For my Bobateaaa,</h1>
+
+        <p>
+            Being far away from you my baccha has always been the hardest part of my days.
+            There are days when I wish I could skip all the life chaos, distance,
+            all the waiting, and just fly straight to you just to be next to you. 
+        </p>
+
+        <p>
+            But somehow, even from far away, for four freaking years you still manage 
+            to be the best adrenaline rush in every single day of my life.
+        </p>
+
+        <p>
+            And out of every place, every person, every possibility,
+            and every version of my life...my jaana
+        </p>
+
+        <h2 class="choose-you">
+            I'd still choose you dodaa.<br>
+            Every single time. ❤️
+        </h2>
+
+        <p>
+            I can't wait for all the completely ordinary days we haven't
+            lived yet — annoying each other, giving each other countless massages,
+            laughing over stupid things, long drives, bike rides, late night walk/food run,
+            eating together, arguing about absolutely nothing, and
+            building our own little world full of all the fun and love we couldn't experience
+            cuz of this life's jeopardies...
+        </p>
+
+        <p>
+            Until then, consider this website proof that your wifey, ur bibli baccha
+            misses you enough to literally spend countless nights of ideas and thoughts
+            in making you this surprise. Also, mujhse ghussa bilkul na karna my shonajaana, 
+            you know na in this whole world, the only person I blindly rely and be baby with is you?
+            I love each and every single thing of yours bobatea except for your ghussa. 
+            Mere saath kabhi naraz na ho na iske baad gugga! 😭
+             
+        </p>
+
+        <button onclick="nextPage('missMe')">
+            For when you miss me →
+        </button>
+    </section>
+
+
+    <!-- MISS ME -->
+    <section id="missMe" class="page">
+    <div class="emoji">💌</div>
+
+    <h1>For when you miss me...</h1>
+
+    <div id="loveMessage" class="love-message">
+        Press the button. ❤️
+    </div>
+
+    <button onclick="randomLoveMessage()">
+        Give me a message
+    </button>
+
+    <hr class="divider">
+
+    <h2>Waittt 👀</h2>
+
+    <p>
+        Your girl obviously wants to see your answers too. 😌❤️
+    </p>
+
+    <button onclick="showAnswers()">
+        See My Answers ❤️
+    </button>
+
+    <div id="answersBox" class="answers-box" style="display:none;">
+        <h2>Your answers for me 🥺❤️</h2>
+
+        <div id="answersText"></div>
+
+        <button onclick="shareAnswers()">
+            Send My Answers ❤️
+        </button>
+    </div>
+
+    <p class="ending">
+        Made with an embarrassing amount of love for my Bobateaaa. 🧋❤️
+    </p>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

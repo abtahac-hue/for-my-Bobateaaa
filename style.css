@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Georgia, "Times New Roman", serif;
+    background:
+        radial-gradient(circle at top, #ffe4ec, transparent 45%),
+        linear-gradient(135deg, #fff5f7, #f8dce5);
+    color: #5c3440;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    padding: 25px;
+}
+
+.page {
+    display: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.88);
+    padding: 50px 35px;
+    border-radius: 28px;
+    box-shadow: 0 15px 50px rgba(120, 50, 75, 0.15);
+    animation: fadeIn 0.8s ease;
+}
+
+.page.active {
+    display: block;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+.small-text,
+.question-number {
+    opacity: 0.65;
+}
+
+.emoji {
+    font-size: 4rem;
+}
+
+.worm {
+    font-size: 5rem;
+    margin: 25px;
+}
+
+button {
+    background: #a94f68;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 28px;
+    margin: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.25s;
+    font-family: inherit;
+}
+
+button:hover {
+    transform: scale(1.07);
+    background: #873b51;
+}
+
+textarea,
+input {
+    width: 100%;
+    border: 2px solid #ecc3cf;
+    border-radius: 18px;
+    padding: 16px;
+    margin: 15px 0;
+    font-size: 1rem;
+    font-family: inherit;
+    outline: none;
+    background: #fffafb;
+}
+
+textarea {
+    height: 130px;
+    resize: none;
+}
+
+textarea:focus,
+input:focus {
+    border-color: #a94f68;
+}
+
+.button-area {
+    min-height: 110px;
+    position: relative;
+}
+
+#noButton {
+    position: relative;
+}
+
+#wormMessage,
+#kissMessage {
+    font-weight: bold;
+    min-height: 30px;
+}
+
+.letter-page {
+    text-align: left;
+}
+
+.letter-page h1,
+.letter-page h2,
+.letter-page .tiny-heart {
+    text-align: center;
+}
+
+.choose-you {
+    margin: 35px 0;
+    color: #a94f68;
+}
+
+.tiny-heart {
+    font-size: 3rem;
+}
+
+.love-message {
+    margin: 30px auto;
+    padding: 25px;
+    max-width: 500px;
+    min-height: 100px;
+    border-radius: 20px;
+    background: #fff3f6;
+    font-size: 1.35rem;
+    line-height: 1.6;
+}
+
+.ending {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    opacity: 0.65;
+}
+
+.floating-heart {
+    position: fixed;
+    bottom: -30px;
+    pointer-events: none;
+    animation: floatUp linear forwards;
+    z-index: -1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.8;
+    }
+
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 15px;
+    }
+
+    .page {
+        padding: 35px 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.55rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 90%;
+    }
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #ecc3cf;
+    margin: 45px 0;
+}
+
+.answers-box {
+    margin-top: 30px;
+    padding: 25px;
+    background: #fff3f6;
+    border-radius: 22px;
+    text-align: left;
+    animation: fadeIn 0.8s ease;
+}
+
+.answers-box h2 {
+    text-align: center;
+}
+
+.answers-box p {
+    padding: 12px 0;
+    border-bottom: 1px solid #f0d4dc;
+}
+
+.answers-box button {
+    display: block;
+    margin: 25px auto 5px;
+}
